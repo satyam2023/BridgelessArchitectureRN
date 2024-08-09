@@ -34,10 +34,16 @@ npm run android
 yarn android
 ```
 
-TO Enable New Architecture(Bridgeless) in Ios simply go inside the ios directory and run the following command bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install.
 ### For iOS
 
 ```bash
+
+#TO Enable New Architecture(Bridgeless) in Ios simply go inside the ios directory and run the following command
+
+bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install.
+
+# Now start your application
+
 # using npm
 npm run ios
 
