@@ -3,6 +3,18 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Eabling New Architecture
+
+### For Android
+To enable new architecture(Bridgeless) in android change the flag of newArchEnabled=false to  newArchEnabled=true in gradle.properties file.
+
+### For iOS
+```bash
+
+#To enable new architecture(Bridgeless) in Ios simply go inside the ios directory and run the following command
+
+bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install.
+
 
 ## Step 1: Start the Metro Server
 
@@ -24,8 +36,6 @@ Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _roo
 
 ### For Android
 
-TO Enable New Architecture(Bridgeless) in Android change the flag of newArchEnabled=false to  newArchEnabled=true in gradle.properties file.
-
 ```bash
 # using npm
 npm run android
@@ -38,9 +48,6 @@ yarn android
 
 ```bash
 
-#TO Enable New Architecture(Bridgeless) in Ios simply go inside the ios directory and run the following command
-
-bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install.
 
 # Now start your application
 
